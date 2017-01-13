@@ -111,7 +111,7 @@ abstract class ConsumerCommand extends AbstractRSQueueCommand
     {
         $this->define();
 
-        $consumer = $this->getContainer()->get('rsqueue.consumer');
+        $consumer = $this->getContainer()->get('rs_queue.consumer');
         $iterations = (int) $input->getOption('iterations');
         $timeout = (int) $input->getOption('timeout');
         $sleep = (int) $input->getOption('sleep');
