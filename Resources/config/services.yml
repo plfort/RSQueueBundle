@@ -5,6 +5,8 @@ parameters:
     rs_queue.resolver.queuealias.class: Mmoreram\RSQueueBundle\Resolver\QueueAliasResolver
 
 services:
+    _defaults:
+        public: true
 
     rs_queue.serializer.factory:
         class: "%rs_queue.serializer.factory.class%"
